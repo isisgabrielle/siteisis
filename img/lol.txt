@@ -1,0 +1,322 @@
+@media (min-width: 831px) and (max-width: 1112px) {
+ 
+    #projetos .slide, #experiencia .slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #projetos .slide .exper, #experiencia .slide .exper {
+        flex: 0 0 48%; /* Define a largura de cada slide para 48% (para deixar um pequeno espaço entre eles) */
+        margin: 1%; /* Adiciona uma margem entre os slides */
+        box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura total */
+    }
+    .textosMaiores {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        margin-left: 2em !important;
+        margin-bottom: 1.5em;
+        color: #000e22;
+    }
+
+    .exper {
+        flex-wrap: wrap !important;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden; /* Impede que o conteúdo exceda os limites da div */
+        padding: 1em;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        background:#031f47;
+        border-radius: 15%;
+    }
+    
+    .projetos{
+        flex-wrap: wrap;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden; /* Impede que o conteúdo exceda os limites da div */
+        padding: 1em;
+        border: 1px solid #ccc;
+    }
+
+    .textosProjetos {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 20% !important;
+        font-size: 60% !important;
+    }
+
+    .textosComplementares {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 20%;
+        font-size: 50% !important;
+    }
+
+    .textosMenores {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400px;
+        margin-bottom: 2em;
+        margin-left: 3em !important; 
+        color: #000e22;
+    }
+
+    .imagem {
+        width: auto !important;
+        height: 40% !important;
+        object-fit: contain; 
+        padding-bottom: 6% !important;
+    }
+}
+.exper {
+    flex-wrap: wrap !important;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Impede que o conteúdo exceda os limites da div */
+    padding: 1em;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background:#031f47;
+    border-radius: 15%;
+    
+}
+
+
+#fotominha {
+    width: 150px;
+    height: 150px; 
+    border-radius: 60%;
+    float: right;
+    margin-left: 1em;
+    transform: translate(-5vw, -5vh); 
+}
+.textosMaiores {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-left: 2em !important;
+    margin-bottom: 1.5em;
+    color:#000e22;
+
+}
+
+.textosProjetos {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 20%;
+    font-size: 80%;
+}
+
+.textosComplementares {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 20%;
+    font-size: 70%;
+}
+.textosMenores {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+    margin-bottom: 2em;
+    margin-left: 3em !important; 
+    color:#000e22;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#textproj{
+    margin-top: 9%;
+}
+
+.cabecalho.texto {
+    display: flex;
+    gap: 1em; 
+    align-items: center; 
+    color: #e1e1e1;
+}
+
+.cabecalho.texto .nome {
+    margin: 0; 
+    padding: 0; 
+    color: #e1e1e1;
+
+}
+
+.projetos {
+    display: flex;
+    gap: 10%; 
+    padding: 1em 0; 
+    margin-top: 1em;
+    padding-left: 5%;
+}
+
+.slide{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5%; 
+    min-width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+
+#beeFrutas, #farmaland, #manguetrack, #arreda {
+    background:#031f47;
+    border-radius: 15%;
+    display: inline-block;
+    text-align: center;
+    color: rgb(172, 172, 172);
+   
+}
+#beeFrutas, #farmaland, #manguetrack, #arreda,
+.exper {
+    width: 20vw; 
+    height: 20vw;
+    padding: 1rem; 
+}
+body{
+    color:#e1e1e1;
+    background-color: #efefef;
+}
+
+.cabecalho-texto {
+    display: flex; 
+    gap: 20%;
+    align-items: center; 
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+@media (min-width: 1112px){ 
+#projetos .slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#experiencia .slide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.exper img {
+    margin-top: 1rem; 
+    border-radius: 15%; 
+}
+
+.imagem {
+    width: 30%;
+    height: 30%;
+}
+
+#arredaa{
+    width: 60%;
+    height: 35%;
+}
+#mangue{
+    width: 60%;
+    height: 50%;
+}
+
+#farmalandd{
+    width: 50%;
+    height: 40%;
+}
+
+#beefrutass{
+    width: 50%;
+    height: 50%;
+}
+#ufs{
+    width: 50%;
+    height: 25%;
+}
+
+#inova{
+    width: 35%;
+    height: 35%;
+
+}
+#ih{
+    width: 40%;
+    height: 35%;
+}
+
+}
+
+@media (max-width: 830px) {
+    
+    .cabecalho.texto {
+        display: none !important; 
+    }
+
+    .cabecalho {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .textosMaiores {
+        padding-left: 9px !important;
+        margin-bottom: 1em !important;
+        font-size: 20px !important;
+        color:  #02043a;
+        font-family: 'Poppins', sans-serif;
+
+
+    }
+    .textosMenores {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px !important;
+        margin-bottom: 3em;
+        padding-left: 7px; 
+        color:  #02043a;
+        font-family: 'Poppins', sans-serif;
+
+
+    }
+    .textosComplementares{
+        font-size: 15px !important;
+        font-family: 'Poppins', sans-serif;
+
+
+ 
+    }
+    .textosProjetos{
+        font-size:15px !important;
+        font-family: 'Poppins', sans-serif;
+
+
+    }
+    .slide {
+        display: block;
+    }
+
+    .exper, .projetos {
+        width: auto !important;
+        height: 50% !important;
+        background: #02043a !important;
+
+    }
+    .imagem{
+        width: auto !important;
+        height: 40% !important;
+    }
+    
+    #beeFrutas, #farmaland, #manguetrack, #arreda {
+        background: #02043a !important;
+       
+    }
+  
+    
+}
+  

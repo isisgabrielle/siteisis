@@ -1,104 +1,306 @@
+@media (min-width: 780px) and (max-width: 1112px) {
+    #logo{
+        width: auto !important;
+        height: 45px !important;
+    }
+    #projetos .slide, #experiencia .slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #projetos .slide .projetos, #experiencia .slide .exper {
+        flex: 1 1 45%;
+        margin: 1%;
+        box-sizing: border-box;
+    }
+
+    #fotominha {
+        width: 150px;
+        height: 150px; 
+        border-radius: 60%;
+        float: right;
+        margin-left: 1em;
+        transform: translate(-5vw, -5vh); 
+    }
+
+
+    .textosMaiores {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        margin-left: 2em !important;
+        margin-bottom: 1.5em;
+        color: #000e22;
+    }
+
+    .exper {
+        flex-wrap: wrap !important;
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden; 
+        padding: 1em;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        background:#031f47;
+        border-radius: 35px !important;
+    }
+    
+    .projetos{
+        flex-wrap: wrap !important;
+        position: relative;
+        flex-direction: column;
+        justify-content:center;
+        overflow: hidden; 
+        padding: 1em;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 35px !important
+    }
+
+    .cabecalho.texto {
+        display: flex;
+        gap: 0.25em !important; 
+        align-items: center; 
+        color: #e1e1e1;
+    }
+    .rodape {
+        padding: 1% !important;
+        width: 95% !important;
+    }
+    
+
+    .textosProjetos {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 20% !important;
+        font-size: 60% !important;
+    }
+
+    .textosComplementares {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 20%;
+        font-size: 53% !important;
+    }
+
+    .textosMenores {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400px;
+        margin-bottom: 2em;
+        margin-left: 3em !important; 
+        color: #000e22;
+    }
+
+    .imagem {
+        width: auto !important;
+        height: 40% !important;
+        object-fit: contain; 
+        padding-bottom: 6% !important;
+    }
+}
+
+
+.exper {
+    flex-basis: calc(33.33% - 4.5em);
+    position: relative;
+    padding: 2em;
+    border: 1px solid #ccc;
+    background: #031f47;
+    border-radius: 20%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 130px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.projetos {
+    flex-basis: calc(33.33% - 4.5em);
+    position: relative;
+    padding: 2em;
+    border: 1px solid #ccc;
+    background: #031f47;
+    border-radius: 20%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 150px;
+    height:130px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+  
 #fotominha {
-    width: 200px;
-    height: 200px; 
+    width: 150px;
+    height: 155px; 
     border-radius: 60%;
     float: right;
-    margin-left: 10px;
-    transform: translate(-70px,-40px); 
-}
-
-body {
-    font-family: 'Rubik', sans-serif;
-}
-
-.wrapper {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    background-color: #F7F7F9;
-    border-radius: 40px;
-    justify-content: flex-start;
-    padding: 23px;
-    margin: 30px;
-    display: flex; 
-    width: 1100px; 
-    height: 52px;
-    text-align: center;
-    align-items: center;
-}
-
-.cabecalho {
-    display: flex; 
-    align-items: center; 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-.logo {
-    margin-right: 100px;
-}
-
-.cabecalho.texto {
-    margin-right: 30px;
-    text-decoration: none;
+    margin-left: 1em;
+    transform: translate(-5vw, -5vh); 
 }
 
 .textosMaiores {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    padding-left: 100px; 
-    margin-bottom: 60px;
-   
+    margin-left: 4em;
+    margin-bottom: 1.5em;
+    color:#000e22; 
+
 }
 
 .textosProjetos {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 40%;
+    font-size: 80%;
+    align-items: center!important;
+
 }
 
 .textosComplementares {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: small;
-}
-
-.textosMenores {
+    align-items: center;
+    color: rgb(188, 188, 188);
+    font-weight: 20%;
+    font-size: 65%;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin-bottom: 60px;
-    padding-left: 100px; 
+
+}
+.textosMenores {
+    text-align:left;
+    font-weight: 400px;
+    margin-bottom: 2em;
+    margin-left: 6em; 
+    color:#000e22;
+    font-family: 'Poppins', sans-serif;
+
+
 }
 
-.projetos {
+.wrapper {
     display: flex;
-    gap: 20px; 
-    padding: 10px 0; 
-    margin-top: 10px;
-    padding-left: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+#textproj{
+    margin-top: 9%;
+}
+
+.container {
+    background-color: #000e22;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 2rem;
+    width: 85%;
+    height: auto;
+}
+
+#curriculo {
+    background-color:#031f47;
+    border-radius: 1em;
+    align-items: center;
+    color: rgb(188, 188, 188);
+    height: 4%;
+    margin-top: 3%;
+    height: 7%;
+    width: 12%;
+    font-weight: 600;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.cabecalho {
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.clogo{
+    width: 145px;
+    margin-left: 30px;
+}
+.cabecalho.texto {
+    display: flex;
+    gap: 0.75em; 
+    align-items: center; 
+    color: #e1e1e1;
+}
+
+.cabecalho.texto .nome {
+    margin: 0; 
+    padding: 0; 
+    color: #e1e1e1;
+
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000e22;
+    border-radius: 1em;
+    padding: 1em;
+    width:50%;
+    box-shadow: #000e22;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0.5em 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 a {
     text-decoration: none;
-    color: #000000;
+    color:rgb(172, 172, 172);
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: rgb(6, 6, 139);
+}
+
+
+a:hover {
+   color: rgb(6, 6, 139);
+}
+
+
+#curriculo:hover {
+    background-color: rgb(6, 6, 139);
+}
+
+
+
 .redesSociais {
-    color: #000000;
+    color:#000e22 !important;
     width: 3%;
     height: 3%;
 }
 
 .rodape {
-    background-color: #F7F7F9;
+    background-color: #000e22;
     font-family: Poppins;
     font-weight: 400;
-    padding: 23px;
-    width: 1100px;
+    padding: 2%;
+    width: 85%;
     align-items: center;
-    border-radius: 40px;
+    border-radius: 2em;
     justify-content: flex-start;
     display: flex;
 }
@@ -111,149 +313,323 @@ a {
 
 .telefone {
     display: inline-block;
-    padding: 30px;
+    color:rgb(172, 172, 172);
+    font-size: small;
+
 }
 
 .email {
     display: inline-block;
+    color:rgb(172, 172, 172);
+    font-size: small;
+
 }
 
-.slider {
+.slide{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: auto;
     overflow: hidden;
     margin: auto;
-}
-
-.slider-content {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
     display: flex;
     justify-content: center;
-    gap: 20px; 
-    min-width: 100%;
-    padding: 20px;
+    gap: 5%; 
+    min-width: 98%;
+    padding: 2%;
     box-sizing: border-box;
 }
 
+
 #beeFrutas, #farmaland, #manguetrack, #arreda {
-    background: linear-gradient(to right, #000000, #434343);
-    border-radius: 25px;
+    background:#031f47;
+    border-radius: 15%;
     display: inline-block;
     text-align: center;
-    color: rgb(221, 221, 221);
-    margin: 20px;
-    width: 250px;
-    height: 250px;
-    padding: 20px;
+    color: rgb(172, 172, 172);
+   
 }
 
-.exper {
-    background: linear-gradient(to right, #000000, #434343);
-    border-radius: 25px;
-    margin: 20px;
-    text-align: center;
-    color: rgb(221, 221, 221);
-    width: 250px;
-    height: 250px;
-    padding: 20px;
+#exper1, #exper2, #exper3, #exper4{
+    background:#031f47;
+    border-radius: 15%;
     display: inline-block;
+    text-align: center;
+    color: rgb(172, 172, 172);
 }
 
-.exper img {
-    margin-top: 10px;
-    border-radius: 10px;
+#beeFrutas, #farmaland, #manguetrack, #arreda, #exper1, #exper2, #exper3, #exper4{
+    width: 15vw; 
+    height: 20vw;
+    padding: 1rem; 
+}
+body{
+    color:#e1e1e1;
+    background-color: #efefef;
 }
 
-.arrow {
-    background-color: transparent; 
-    border: none; 
-    color: black; 
-    font-size: 30px; 
+.cabecalho-texto {
+    display: flex; 
+    gap: 20%;
+    align-items: center; 
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.cabecalho-hamburguer {
+    display: none; 
+    font-size: 2rem;
     cursor: pointer;
+}
+
+.menu {
+    display: none;
     position: absolute;
-    top: 50%; 
-    transform: translateY(-50%); 
-    z-index: 10;
-    padding: 10px;
-    transition: color 0.3s ease; 
+    top: 30%; 
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
 }
 
-.left-arrow {
-    left: 10px; 
-    transform: translateY(-50%) rotate(360deg); 
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.right-arrow {
-    right: 10px; 
+.menu ul li {
+    margin: 1% 0;
 }
+.nome{
+    padding-right: 20% !important;
 
-.arrow:hover {
-    color: #434343; 
 }
-
 #creditos{
     font-size: x-small;
 }
+.cabecalho-hamburguer{
+    color: #e1e1e1;
+}
 
-@media (max-width: 768px) { 
-    .container {
-        padding: 7px; 
-        width: 100%; 
-        height: auto; 
+
+
+@media (min-width: 1112px){ 
+#projetos .slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#experiencia .slide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.exper img {
+    margin-top: 1rem; 
+    border-radius: 15%; 
+}
+
+#arredaa{
+    width: 60%;
+    height: 35%;
+}
+#mangue{
+    width: 55%;
+    height: 50%;
+}
+
+#farmalandd{
+    width: 45%;
+    height: 35%;
+}
+
+#beefrutass{
+    width: 30%;
+    height: 40%;
+}
+#ufs{
+    width: 50%;
+    height: 35%;
+}
+
+#inova{
+    width: 35%;
+    height: 40%;
+
+}
+#ih{
+    width: 38%;
+    height: 40%;
+    align-items: center;
+}
+#gdg{
+    width: 30%;
+    height: auto;
+}
+
+#logo{
+    width: auto !important;
+    height: 45px !important;
+}
+}
+
+@media (max-width: 779px) {
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
     }
     
+    .projetos{
+        justify-content: center;
+        margin-right: 10% !important;
+    }
+    #ih{
+        width: 40%;
+        height: 35%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logo{
+        width: auto !important;
+        height: 45px !important;
+    }
     .cabecalho.texto {
-        font-size: 10px;
-        margin-right: 10px;
+        display: none !important; 
     }
 
+
+    .menu {
+        display:flex;
+            background-color: #000e22;
+            border-radius: 1em;
+            margin-left: 65% ;
+            width:120px;
+            height: auto;
+            font-size: small;
+            box-shadow: #000e227e;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-bottom: 200px;
+        }
+
+
+    .menu.active {
+        display: flex;}
 
     #fotominha {
         width: 100px; 
-        height: 100px; 
-        border-radius: 50%; 
-        margin: 20px;
+        height: 100px;
+        margin: 0 auto; 
+        display: block; 
+        transform: none; 
+        border-radius: 50%;
+        float: right;
+        margin-left: 1em;
+        transform: translate(-2vw, -8vh); 
+        margin-top: 30px;
+        }
+        
+
+    .cabecalho {
+        flex-direction: column; 
+        align-items: center; 
     }
-    .textosProjetos{
-        font-size:10px;
+
+    .textosMaiores {
+        margin-left: 30px;
+        margin-bottom: 1em !important;
+        font-size: 20px !important;
+        color:  #02043a;
+       
+
+    }
+    .textosMenores {
+        font-size: 15px !important;
+        margin-bottom: 3em;
+        margin-left: 30px;
+        color:  #02043a;
+
     }
     .textosComplementares{
-        font-size:8px;
+        padding-left: 1px !important;
+        font-size: 54% !important;
+ 
+    }
+    .textosProjetos{
+        font-size:15px !important;
+
+
+    }
+    .slide {
+        display: block;
     }
 
-    .textosMaiores, .textosMenores {
-        font-size: 14px; 
-        padding-left: 15px; 
-        padding-right: 15px; 
+    .imagem{
+        width: auto !important;
+        height: 40% !important;
+    }
+    #logo{
+        width: auto !important;
+        height: 45px !important;
+    }
+    .cabecalho-hamburguer{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin-left: 50%;
+        padding: 0;
+    }
+    #beeFrutas, #farmaland, #manguetrack, #arreda {
+        background: #02043a !important;
+        width: 300px;
+        height: 230px;
+        text-align: center;
+       
     }
 
-    .projetos, .exper {
-        gap: 10px; 
-    }
-
-    .cabecalho.logo {
-        width: 10px;
-        height: 10px;
-    }
-
-    #beeFrutas, #farmaland, #manguetrack, #arreda,
-    .exper {
-        width: 150px; 
-        height: 150px; 
-        padding: 5px; 
-        font-size: 7px;
+    #exper1, #exper2, #exper3, #exper4{
+        background: #02043a !important;
+        width: 300px;
+        height: 230px;
+        text-align: center;
+       
     }
 
     .rodape {
-        padding: 10px; 
+        padding:3%;
+        width: 90%;
+        align-items: center;
+        border-radius: 2em;
+        justify-content: flex-start;
+        display: flex;
     }
 
-    .arrow {
-        font-size: 20px; 
+    .telefone{
+        font-size: 15px;
     }
+    .email{
+        font-size: 15px;
+    }
+
+    #curriculo {
+        height: 4%;
+        margin-top: 3%;
+        height: 7%;
+        width: 30%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        border: none;
+    
+    }
+    .contato{
+        margin-left: 22px;
+    }
+  
+    
 }
+  

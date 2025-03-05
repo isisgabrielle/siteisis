@@ -11,60 +11,71 @@
 
 <body>
     <div class="wrapper">
-        <div class=container>
-            <p class="cabecalho logo" id="logo"> <img src="img/logo.png" width="120 px" height="50 px"> </p>
-            <p class="cabecalho texto"><a href="#sobremim">Sobre mim</a></p>
-            <p class="cabecalho texto"><a href="#projetos">Projetos</a></p>
-            <p class="cabecalho texto"><a href="#experiencia">Experiências</a></p>
-            <p class="cabecalho texto"><a href="#contato">Contato</a></p>
+        <div class="container">
+            <div class="clogo">
+                <img id="logo" src="img/Isis.png" alt="Logo">
+            </div>
+    
+            <div class="cabecalho texto" id="cabecalho-texto">
+                <p class="nome" ><a href="#sobremim">Sobre </a></p>
+                <p class="nome"><a href="#projetos">Projetos</a></p>
+                <p class="nome"><a href="#experiencia">Experiências</a></p>
+                <p class="nome"><a href="#contato">Contato</a></p>
+                
+            </div>
+    
+            <div class="cabecalho-hamburguer" id="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#experiencia">Experiências</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </div>
     </div>
-    <p></p>
     <section id="sobremim">
-        <h1 class="textosMaiores">Olá eu me chamo Isis Menezes</h1>
+        <h1 class="textosMaiores">Olá me chamo Isis Menezes</h1>
         <p></p>
-        <img src="img/fotosemfundo.png" alt="Foto da criadora do site, Isis Menezes com fundo preto" width="220 px"
-            height="200 px" id="fotominha">
-        <p class="textosMenores">Estou no quarto período de Engenharia da Computação e tenho afinidade em <br>
-            desenvolvimento web e mobile.
-            Gosto de criar soluções, como jogos e <br> aplicativos, que possam resolver problemas sociais e ajudar as
-            pessoas.</p>
+        <img class="fotominha" src="img/fotoatualminha.jpg" alt="Foto da criadora do site, Isis Menezes com fundo preto" id="fotominha">
+        <p class="textosMenores">Estou no quarto período de Engenharia da Computação na UFS e desenvolvo principalmente soluções web e mobile,<br> vem conferir um pouco sobre mim.<br>
+            <a href="https://docs.google.com/document/d/13tN8NAMMfo6iSV3GAxhQUvWcXUT73r3OMgVp1PW-koY/edit?usp=sharing" target="_blank"><button id="curriculo">  Acessar curriculo </button>
+        </a>
+        </p>
 
     </section>
 
     <section id="projetos">
-        <h1 class="textosMaiores">Projetos</h1>
+        <h1 id="textproj" class="textosMaiores">Projetos</h1>
         <p class="textosMenores">
-            Ao longo da minha trajetória acadêmica e prática, tive a oportunidade de participar de projetos que me
-            permitiram desenvolver conhecimentos teóricos e habilidades em desenvolvimento web.
+            Acompanhe alguns dos meus projetos aqui:
         </p>
-        <div class="slider projetos-slider">
-            <button class="arrow left-arrow">&lt;</button>
-            <div class="slider-content">
                 <div class="slide">
-                    <div id="beeFrutas">
+                    <div class="projetos" id="beeFrutas">
                         <p title="Clique para saber mais" class="textosProjetos">Bee Frutas</p>
                         <p title="Clique para saber mais" class="textosComplementares">
                             Bee Frutas é um jogo de tabuleiro digital que desenvolvi em Swing Java onde dois
                             competidores entram em uma floresta repleta de frutas.
                         </p>
                         <a target="_blank" href="https://github.com/isisgabrielle/Beefrutas/releases/tag/V1.0.0">
-                            <img title="Clique para saber mais" src="img/beeFrutas.jpg"
-                                alt="Imagem do Projeto Bee Frutas" width="90" height="90">
+                            <img id="beefrutass" class="imagem" title="Clique para saber mais" src="img/beeFrutas.jpg"
+                                alt="Imagem do Projeto Bee Frutas" >
                         </a>
                     </div>
-                    <div id="farmaland">
+                    <div class="projetos" id="farmaland">
                         <p title="Clique para saber mais" class="textosProjetos">Farmaland</p>
                         <p title="Clique para saber mais" class="textosComplementares">
                             Neste jogo educativo desenvolvido com Java Swing, você assume o papel da farmacêutica
                             Elloisa em um mundo industrializado onde infecções são uma ameaça grave.
                         </p>
                         <a target="_blank" href="https://github.com/isisgabrielle/Farmaland/releases/tag/V1.0.0">
-                            <img title="Clique para saber mais" src="img/farmaland.jpg"
-                                alt="Imagem do Projeto Farmaland" width="100" height="100">
+                            <img id="farmalandd" class="imagem" title="Clique para saber mais" src="img/farmaland.jpg"
+                                alt="Imagem do Projeto Farmaland" >
                         </a>
                     </div>
-                    <div id="manguetrack">
+                    <div class="projetos" id="manguetrack">
                         <p title="Clique para saber mais" class="textosProjetos">MangueTrack</p>
                         <p title="Clique para saber mais" class="textosComplementares">
                             O Mangue Track é uma aplicação de rotas de ônibus, onde o usuário pode escolher o ponto de
@@ -72,46 +83,38 @@
                         </p>
                         <a target="_blank"
                             href="https://www.linkedin.com/posts/isis-menezes-04b01b259_sustentabilidade-mobilidadeurbana-cidadessustentaerveis-activity-7256023196787720192-scXH?utm_source=share&utm_medium=member_desktop">
-                            <img title="Clique para saber mais" src="img/logo mangue track.png"
-                                alt="Logo do Projeto MangueTrack" width="120" height="120"> </a>
+                            <img id="mangue" class="imagem" title="Clique para saber mais" src="img/logo mangue track.png"
+                                alt="Logo do Projeto MangueTrack"> </a>
                     </div>
-                </div>
-                <div class="slide">
-                    <div id="arreda">
+                    <div class="projetos" id="arreda">
                         <p title="Clique para saber mais" class="textosProjetos">Arreda</p>
                         <p title="Clique para saber mais" class="textosComplementares">
                             Uma solução antifraude desenvolvida para prevenir o público idoso de golpes.
                         </p>
                         <a target="_blank"
                             href="https://drive.google.com/file/d/1UbDWCPW212PWG5jENVSOvJw599DA4Wio/view?usp=sharing">
-                            <img title="Clique para saber mais" src="img/arreda.png" alt="Imagem do Projeto Arreda"
-                                width="140" height="100">
+                            <img class="imagem" id="arredaa" title="Clique para saber mais" src="img/arreda.png" alt="Imagem do Projeto Arreda"
+                               >
                         </a>
                     </div>
                 </div>
-            </div>
-            <button class="arrow right-arrow">&gt;</button>
-        </div>
+        
     </section>
 
     <section id="experiencia">
         <h1 class="textosMaiores">Experiências</h1>
         <p class="textosMenores">
-            Ao longo da minha trajetória, desenvolvi habilidades de liderança e trabalho em equipe, organizando e
-            coordenando projetos com diferentes pessoas e ideias.
+            Acompanhe algumas das minhas experiências durante a minha trajetória acadêmica:
         </p>
-        <div class="slider experiencia-slider">
-            <button class="arrow left-arrow">&lt;</button>
-            <div class="slider-content">
                 <div class="slide">
                     <div class="exper" id="exper1">
                         <p title="Clique para saber mais" class="textosProjetos">Projeto de Pesquisa</p>
                         <p title="Clique para saber mais" class="textosComplementares">
-                            Atualmente, estou desenvolvendo um aplicação que busca conectar a agricultura familiar com o
+                            Desenvolvi um aplicação que busca conectar a agricultura familiar com o
                             mercado regional, dentro desse projeto trabalhei com modelagem de banco de dados e a criação
                             de uma API em Java Spring.
                         </p>
-                        <img src="img/ufs.png" alt="Logo da UFS" width="100" height="100">
+                        <img id="ufs" class="imagem" src="img/ufs.png" alt="Logo da UFS" >
                     </div>
                     <div class="exper" id="exper2">
                         <p title="Clique para saber mais" class="textosProjetos">Organizer GDG ARACAJU</p>
@@ -120,8 +123,7 @@
                             desenvolvimento de eventos e cursos na comunidade tecnológica da cidade.
                         </p>
                         <a target="_blank" href="https://www.instagram.com/gdgaracaju/?hl=pt-br">
-                            <img title="Clique para saber mais" src="img/gdg.png" alt="Logo do GDG ARACAJU" width="100"
-                                height="100">
+                            <img id="gdg" class="imagem" title="Clique para saber mais" src="img/gdg.png" alt="Logo do GDG ARACAJU" >
                         </a>
                     </div>
                     <div class="exper" id="exper3">
@@ -132,12 +134,9 @@
                         </p>
                         <a target="_blank"
                             href="https://www.linkedin.com/in/isis-menezes-04b01b259/details/certifications/1723318509543/single-media-viewer/?profileId=ACoAAD-Ka3sBpOgOD9hI9ElxOvhbu3PoZ0Bcc90">
-                            <img title="Clique para saber mais" src="img/inova.png" alt="Logo da MIB" width="100"
-                                height="100">
+                            <img id="inova" class="imagem" title="Clique para saber mais" src="img/inova.png" alt="Logo da MIB">
                         </a>
                     </div>
-                </div>
-                <div class="slide">
                     <div class="exper" id="exper4">
                         <p title="Clique para saber mais" class="textosProjetos">Innovation Hub</p>
                         <p title="Clique para saber mais" class="textosComplementares">
@@ -145,14 +144,13 @@
                             ser uma ponte entre o meio academico e o mercado de trabalho.
                         </p>
                         <a target="_blank" href="https://www.instagram.com/innovationhub.ufs/?hl=pt-br">
-                            <img title="Clique para saber mais" src="img/logo IH.png" alt="Logo do Innovation Hub"
-                                width="110" height="100">
+                            <img id="ih" class="imagem" title="Clique para saber mais" src="img/logo IH.png" alt="Logo do Innovation Hub"
+                              >
                         </a>
                     </div>
+              
                 </div>
-            </div>
-            <button class="arrow right-arrow">&gt;</button>
-        </div>
+        
     </section>
 
 
@@ -160,43 +158,33 @@
         <footer class="rodape">
             <section id="contato">
                 <div class="contato">
-                    <p class="telefone"> Telefone<br> <a target="_blank" href=" https://wa.me/5579996044918"> (79)
-                            99604-4918 </a> </p>
-                    <p class="email"> Email<br> <a
-                            href="mailto:isisgabriellemenezesgmail.com">isisgabriellemenezesgmail.com </a></p>
+                    <p class="telefone"> Telefone<br> <a target="_blank" href=" https://wa.me/5579996044918"> 79996044918 </a> </p> <br>
+                    <p class="email">Email<br> <a
+                            href="mailto:isisgabriellemenezesgmail.com">isisgabriellemenezes@gmail.com </a></p>
                     <div>
                         <a target="_blank" href="https://www.instagram.com/isismnzes/">
-                            <svg class="redesSociais" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                <g fill="#fffbfb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                                </svg>
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/in/isis-menezes-04b01b259/">
-                            <svg class="redesSociais" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path
-                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                <g fill="#fffbfb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path></g></g>
+                                </svg>
                         </a>
                         <a target="_blank" href="https://github.com/isisgabrielle">
-                            <svg class="redesSociais" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                <g fill="#fffbfb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z"></path></g></g>
+                                </svg>
+                            
                         </a>
                         <a target="_blank" href="mailto:isisgabriellemenezes@gmail.com">
-                            <svg class="redesSociais" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path
-                                    d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                
                         </a>
                     </div>
                 </div>
             </section>
-            <p id="creditos">Baseado no site da <a href="https://ebaconline.com.br/" target="_blank">EBAC</a></p>
         </footer>
     </whrodape>
     <script src="partetres.js"></script>
